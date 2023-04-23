@@ -1,0 +1,8 @@
+---
+    - name: Install httpd package
+      yum: name=httpd state=latest
+
+    - name: Install firewalld
+      yum: name=firewalld state=latest
+
+

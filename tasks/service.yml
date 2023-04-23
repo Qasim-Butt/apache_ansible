@@ -1,0 +1,9 @@
+---
+    
+    - name: Copy index.html file from master server
+      copy: src=files/index.html dest=/var/www/html/index.html
+
+
+    - name: Start httpd and enable on reboot
+      service: name=httpd state=started enabled=yes
+

@@ -1,0 +1,9 @@
+---
+
+    - name: Add firewall rule
+      firewalld: port=80/tcp permanent=true state=enabled
+
+    - name: Restart firewall
+      systemd: name=firewalld state=reloaded
+
+
